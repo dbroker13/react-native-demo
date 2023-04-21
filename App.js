@@ -9,27 +9,13 @@ import React from 'react';
 import { View, Image, Text, StyleSheet, Button } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-// import {
-//   SafeAreaView,
-//   ScrollView,
-//   StatusBar,
-//   StyleSheet,
-//   Text,
-//   useColorScheme,
-//   View,
-// } from 'react-native';
 
-// import {
-//   Colors,
-//   DebugInstructions,
-//   Header,
-//   LearnMoreLinks,
-//   ReloadInstructions,
-// } from 'react-native/Libraries/NewAppScreen';
 import { enableScreens } from 'react-native-screens';
 import HomeScreen from './src/screens/HomeScreen';
 import WeatherScreen from './src/screens/WeatherScreen';
 import AccountScreen from './src/screens/AccountScreen';
+import LoginScreen from './src/screens/LoginScreen';
+import ExperimentScreen from './src/screens/ExperimentScreen';
 
 
 const Stack = createStackNavigator();
@@ -44,6 +30,10 @@ const App = () => {
         name="Weather" component={WeatherScreen} />
       <Stack.Screen options={{ title: 'Account Screen' }} 
         name="Account" component={AccountScreen} />
+      <Stack.Screen options={{ title: 'Login Screen' }} 
+        name="Login" component={LoginScreen} />
+      <Stack.Screen options={{ title: 'Experiment Screen' }} 
+        name="Experiment" component={ExperimentScreen} />
 
     </Stack.Navigator>
   </NavigationContainer>

@@ -8,7 +8,9 @@ const HomeScreen = ({navigation}) => {
     <View style={styles.Spacer}></View>
      <Button  onPress={() => navigation.navigate('Weather')} title="Get the Weather"></Button>
      <View style={styles.Spacer}></View>
-     <Button onPress={() => navigation.navigate('Account')} title="Check your account"></Button>
+     <Button onPress={() => navigation.navigate('Login')} title="Check your account"></Button>
+     <View style={styles.Spacer}></View>
+     <Button onPress={() => navigation.navigate('Experiment')} title="Experiment Screen"></Button>
     </View>
     )}
 
