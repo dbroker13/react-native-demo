@@ -15,7 +15,7 @@ const ExperimentScreen = ({navigation}) => {
     <View>
      <Text>ExperimentScreen</Text>
      <ActivityIndicator style={styles.lottie}  animating={visible}/>
-    <Button onPress={spinner} title="Activate Spinner"></Button>
+    <Button onPress={spinner} testID="Spinner" title="Activate Spinner"></Button>
 
     </View>
     )}

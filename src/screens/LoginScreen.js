@@ -25,6 +25,7 @@ const LoginScreen = ({navigation}) => {
         autoCapitalize="none"
         autoCorrect={false}
         placeholder="Username"
+        testID="Username"
         />
     <TextInput label="password" 
         value={password} 
@@ -33,10 +34,11 @@ const LoginScreen = ({navigation}) => {
         autoCorrect={false}
         secureTextEntry={true}
         placeholder="Password"
+        testID="Password"
         />
         <Text>This is the Account Screen</Text>
         {errorMessage.length != 0 ? <Text>{errorMessage}</Text> : null}
-    <Button onPress={login} title="Login"></Button>
+    <Button onPress={login} testID="Login" title="Login"></Button>
      {/* <Button onPress={() => navigation.navigate('Account')} title="Check your account"></Button> */}
     </View>
     )}
