@@ -28,10 +28,11 @@ const WeatherScreen = ({navigation}) => {
     <View style={styles.viewStyle}>
         <Text>This is the Weather Screen</Text>
         <SearchBar
+        testID='SearchBar'
         term={term}
         onTermChange={setTerm}
       />
-        <Button title="Search Api" onPress={() => searchApi({term})}/>
+        <Button title="Search Api" testID='GetWeather' onPress={() => searchApi({term})}/>
         <Text style={styles.textStyle}> {findTemp()} </Text>
         <Image style={styles.image} source={require('../../assets/SunShine.gif')} />
         <Text> Thank you for using our react native app for the weather</Text>

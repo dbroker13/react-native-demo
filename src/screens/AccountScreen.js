@@ -6,7 +6,7 @@ const AccountScreen = ({navigation}) => {
     <View>
      <Text>Welcome Back Bella</Text>
 
-    <Text style={styles.AccountText} >Your account has $520</Text>
+    <Text style={styles.AccountText} testID='accountText' >Your account has $520</Text>
     </View>
     )}
     const styles = StyleSheet.create({
