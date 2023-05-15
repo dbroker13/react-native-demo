@@ -12,7 +12,8 @@ npx react-native bundle \
 --assets-dest ./android/app/src/main/res/ \
 --entry-file index.js \
 --bundle-output ./android/app/src/main/assets/index.android.bundle \
---platform android -dev false
+--platform android \
+-dev false
 
 then build debug apk with 
 
