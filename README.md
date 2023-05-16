@@ -18,3 +18,9 @@ npx react-native bundle \
 then build debug apk with 
 
 ./gradlew assembleDebug
+
+to enable network debugging add the line
+
+android:networkSecurityConfig="@xml/network_security_config"
+
+to the AndroidManifest.xml
